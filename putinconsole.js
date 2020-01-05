@@ -7687,6 +7687,13 @@ function a (){
 var fun_number = $('#n');
 console.log(fun_number[0].innerHTML);
 var not_prime = true;
+
+//you're on your own now bro
+if(fun_number[0].innerHTML > 1000000){
+    clearInterval(t);
+    return;
+}
+    
 for(var i = 0; i < primes.length; i++){
     if(primes[i] > fun_number[0].innerHTML) break;
     if(fun_number[0].innerHTML == primes[i]){
